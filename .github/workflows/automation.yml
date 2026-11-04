@@ -2,11 +2,8 @@
 name: Daily UID Automation
 
 on:
-  schedule:
-    # Every 10 minutes (UTC)
-    - cron: '*/10 * * * *'
-
-  # Allow manual testing
+  repository_dispatch:
+    types: [trigger-cron]
   workflow_dispatch:
 
 permissions:
