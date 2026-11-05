@@ -14,7 +14,9 @@ url = os.getenv(
     "https://bnsgaming.site/api/send.php"
 )
 
-coupon = os.getenv("COUPON_CODE")
+# Change "COUPON_CODE" to "COUPON"
+coupon = os.getenv("COUPON")
+
 region = "PK"
 
 uids = [
