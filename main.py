@@ -14,7 +14,7 @@ url = os.getenv(
     "https://bnsgaming.site/api/send.php"
 )
 
-coupon = "LIKES-425FCCEC"
+coupon = os.getenv("COUPON_CODE"
 region = "PK"
 
 uids = [
