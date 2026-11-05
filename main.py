@@ -14,8 +14,9 @@ url = os.getenv(
     "https://bnsgaming.site/api/send.php"
 )
 
-# Change "COUPON_CODE" to "COUPON"
-coupon = os.getenv("COUPON")
+# This checks for COUPON first, and falls back to COUPON_CODE if it's not there
+coupon = os.getenv("COUPON") or os.getenv("COUPON_CODE")
+
 
 region = "PK"
 
@@ -116,8 +117,9 @@ def process_uids(state_file):
 
     if not coupon:
         raise RuntimeError(
-            "COUPON environment variable is missing."
+            f"COUPON environment variable is missing. (Detected value: {coupon})"
         )
+
 
     records = load_records(state_file)
 
