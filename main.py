@@ -15,7 +15,7 @@ url = os.getenv(
 )
 
 # This checks for COUPON first, and falls back to COUPON_CODE if it's not there
-coupon = os.getenv("COUPON") or os.getenv("COUPON_CODE")
+couponD = os.getenv("COUPON") or os.getenv("COUPON_CODE")
 
 
 region = "PK"
