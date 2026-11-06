@@ -15,7 +15,7 @@ url = os.getenv(
 )
 
 # This checks for COUPON first, and falls back to COUPON_CODE if it's not there
-couponD = os.getenv("COUPON") or os.getenv("COUPON_CODE")
+coupon = os.getenv("COUPON") or os.getenv("COUPON_CODE")
 
 
 region = "PK"
@@ -28,8 +28,6 @@ uids = [
     "18431337306",
     "115010455579",
     "11504633467",
-    "7024912135",
-    "2862394070",
     "2764965842"
 ]
 
